@@ -70,12 +70,12 @@ This approach simulates real chatbot behavior without using any external service
 
 ### 💬 Chat Interface
 
-![Chat Interface]<img width="761" height="585" alt="image" src="https://github.com/user-attachments/assets/4e5e4e0d-0cf9-4f04-8767-dbc73e8871c0" />
+<img width="761" height="585" alt="image" src="https://github.com/user-attachments/assets/4e5e4e0d-0cf9-4f04-8767-dbc73e8871c0" />
 
 
 ### 🤖 User and AI Conversation
 
-![User and AI Conversation]<img width="747" height="558" alt="image" src="https://github.com/user-attachments/assets/99bb5521-1879-4e14-a813-5fb7a4ed09af" />
+<img width="747" height="558" alt="image" src="https://github.com/user-attachments/assets/99bb5521-1879-4e14-a813-5fb7a4ed09af" />
 
 
 ---
