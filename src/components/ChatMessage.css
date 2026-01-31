@@ -17,9 +17,11 @@ align-items: end;
   margin-right: 10px;
   margin-top: 20px;
   max-width: 300px;
+  word-wrap:break-word;
 }
 .chat-message-profile {
   height: 45px;
-  border-radius: 30px;
+  width: 45px;
+  border-radius: 45px;
   object-fit: cover;
 }
