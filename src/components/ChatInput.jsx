@@ -5,13 +5,26 @@ import './ChatInput.css'
 
 function ChatInput({chatMessages,setChatMessages}) {
   const [inputText,setInputText] = useState('');
+  const [isLoading, setIsLoading] = useState(false);
 
   function saveInputText(event) {
     setInputText(event.target.value);
   }
 
+  function onKeyDownHandler(e) {
+    if (e.key === 'Enter') {
+      saveMessage();
+    } else if (e.key === 'Escape'){
+      clearMessge();
+    }
+  }
+
     async function saveMesage(){
-          setInputText('');
+      if(isLoading || inputText === '') {
+            return;
+        }
+
+      setIsLoading(true);
 
           const newChatMessage = [...chatMessages,
             {
@@ -47,19 +60,21 @@ function ChatInput({chatMessages,setChatMessages}) {
           ])
   
           setInputText('');
+          setIsLoading(false);
         }
 
 function clearMessage(){
   setChatMessages([]);
 }
   return (
-    <div                     className="chat-input-container">     
+    <div className="chat-input-container">     
       <input 
         type="text" 
         placeholder="Send a message to Chatbot"   
         className="chat-input"
         size="30"
         onChange={saveInputText}
+        onKeyDown={onKeyDownHandler}
         value={inputText}
       />
       <button 
