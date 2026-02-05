@@ -10,7 +10,7 @@ function ChatInput({chatMessages,setChatMessages}) {
   function saveInputText(event) {
     setInputText(event.target.value);
   }
-
+  
   function onKeyDownHandler(e) {
     if (e.key === 'Enter') {
       saveMessage();
